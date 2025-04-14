@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 5px;
+      overflow: auto;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <h1>API Test Page</h1>
+  
+  <div>
+    <h2>Registration (Static JSON)</h2>
+    <button onclick="testRegistrationJSON()">Test Registration JSON</button>
+    <pre id="registration-json-result">Results will appear here...</pre>
+  </div>
+  
+  <div>
+    <h2>Login (Static JSON)</h2>
+    <button onclick="testLoginJSON()">Test Login JSON</button>
+    <pre id="login-json-result">Results will appear here...</pre>
+  </div>
+  
+  <div>
+    <h2>User Profile (Static JSON)</h2>
+    <button onclick="testProfileJSON()">Test Profile JSON</button>
+    <pre id="profile-json-result">Results will appear here...</pre>
+  </div>
+
+  <div>
+    <h2>Admin Login (Static JSON)</h2>
+    <button onclick="testAdminLoginJSON()">Test Admin Login JSON</button>
+    <pre id="admin-login-json-result">Results will appear here...</pre>
+  </div>
+  
+  <script>
+    async function testRegistrationJSON() {
+      const resultElement = document.getElementById('registration-json-result');
+      resultElement.textContent = 'Loading...';
+      
+      try {
+        const response = await fetch('/backend/auth_register.json');
+        const data = await response.json();
+        resultElement.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        resultElement.textContent = `Error: ${error.message}`;
+      }
+    }
+    
+    async function testLoginJSON() {
+      const resultElement = document.getElementById('login-json-result');
+      resultElement.textContent = 'Loading...';
+      
+      try {
+        const response = await fetch('/backend/auth_login.json');
+        const data = await response.json();
+        resultElement.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        resultElement.textContent = `Error: ${error.message}`;
+      }
+    }
+    
+    async function testProfileJSON() {
+      const resultElement = document.getElementById('profile-json-result');
+      resultElement.textContent = 'Loading...';
+      
+      try {
+        const response = await fetch('/backend/user_profile.json');
+        const data = await response.json();
+        resultElement.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        resultElement.textContent = `Error: ${error.message}`;
+      }
+    }
+
+    async function testAdminLoginJSON() {
+      const resultElement = document.getElementById('admin-login-json-result');
+      resultElement.textContent = 'Loading...';
+      
+      try {
+        const response = await fetch('/backend/admin_login.json');
+        const data = await response.json();
+        resultElement.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        resultElement.textContent = `Error: ${error.message}`;
+      }
+    }
+  </script>
+</body>
+</html> 

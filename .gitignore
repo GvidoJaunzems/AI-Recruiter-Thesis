@@ -1,0 +1,37 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# PHP specific
+vendor/
+composer.phar
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel (in case we reintroduce it later)
+/bootstrap/cache/
+/storage/*.key
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+# Deployment related
+*.zip
+*.log
+error_log

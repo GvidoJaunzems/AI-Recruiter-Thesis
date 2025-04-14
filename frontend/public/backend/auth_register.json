@@ -1,0 +1,13 @@
+{
+  "message": "Registration successful",
+  "token": "eyJ1c2VyX2lkIjoxMjMsInVzZXJuYW1lIjoiZ3ZpZG9qYXUiLCJleHAiOjE3MDk5MjM2NDMsInJvbGUiOiJ1c2VyIn0=",
+  "user": {
+    "id": 123,
+    "username": "mockuser",
+    "email": "user@example.com",
+    "first_name": "Mock",
+    "last_name": "User",
+    "role": "user",
+    "created_at": "2023-03-08 12:00:00"
+  }
+} 

@@ -1,0 +1,35 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "Tech Solutions Inc.",
+      "location": "New York, NY",
+      "description": "We are seeking a skilled Frontend Developer to join our dynamic team. The ideal candidate will have strong experience with React, JavaScript, and modern frontend frameworks.",
+      "requirements": "3+ years of experience with React, JavaScript, HTML and CSS. Experience with state management like Redux or Context API. Knowledge of responsive design principles.",
+      "salary_range": "$80,000 - $110,000",
+      "created_at": "2023-03-10 10:00:00"
+    },
+    {
+      "id": 2,
+      "title": "Backend Engineer",
+      "company": "DataFlow Systems",
+      "location": "Remote",
+      "description": "Join our backend team to develop scalable APIs and services. You'll work on challenging problems and help build the core infrastructure of our platform.",
+      "requirements": "Experience with Node.js, Python, or Java. Knowledge of database systems like MySQL, PostgreSQL or MongoDB. Understanding of RESTful API design principles.",
+      "salary_range": "$90,000 - $120,000",
+      "created_at": "2023-03-12 14:30:00"
+    },
+    {
+      "id": 3,
+      "title": "Full Stack Developer",
+      "company": "Web Innovators",
+      "location": "San Francisco, CA",
+      "description": "Looking for a versatile Full Stack Developer who can work across the entire stack. You'll be responsible for developing and maintaining both frontend and backend components.",
+      "requirements": "Experience with JavaScript/TypeScript, React, Node.js. Knowledge of SQL and NoSQL databases. Understanding of CI/CD pipelines.",
+      "salary_range": "$100,000 - $140,000",
+      "created_at": "2023-03-15 09:45:00"
+    }
+  ],
+  "message": "Jobs retrieved successfully"
+}
